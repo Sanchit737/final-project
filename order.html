@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f8f8f8; margin: 0; padding: 0; }
+        .container { max-width: 600px; margin: 20px auto; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .food-image { width: 100%; max-width: 400px; display: block; margin: 0 auto 20px; border-radius: 10px; }
+        .food-details { text-align: center; }
+        .price { color: #e74c3c; font-size: 24px; font-weight: bold; margin: 10px 0; }
+        .options { margin: 15px 0; }
+        .button { background-color: #27ae60; color: white; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px; border-radius: 5px; margin: 10px 0; width: 100%; }
+        .button:hover { background-color: #219150; }
+        .additional-info { margin: 20px 0; color: #555; text-align: center; }
+        .footer { text-align: center; font-size: 14px; color: #888; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Food Image -->
+    <img id="food-image" src=`` alt="Food Image" class="food-image">
+
+    <!-- Food Details -->
+    <div class="food-details">
+        <h2 id="food-name">Food Name</h2>
+        <p id="food-description">Food description goes here.</p>
+        <p id="food-price" class="price">Price: $0.00</p>
+
+        <!-- Customization Options -->
+        <div class="options">
+            <label for="size">Size:</label>
+            <select id="size">
+                <option value="half">Half</option>
+                <option value="full">Full</option>
+            </select>
+        </div>
+
+        <!-- Quantity Selector -->
+        <div class="options">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+        </div>
+
+        <!-- Order Button -->
+        <button class="button">Place Order</button>
+    </div>
+
+    <!-- Additional Info -->
+    <div class="additional-info">
+        <p><strong>Delivery:</strong> Free delivery on orders over $20.</p>
+        <p><strong>Estimated Time:</strong> 30-45 minutes.</p>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2024 Your Restaurant. All rights reserved.
+</div>
+
+<script>
+    // JavaScript to retrieve URL parameters
+    const params = new URLSearchParams(window.location.search);
+    const foodName = params.get('name') || 'Delicious Food';
+    const foodDescription = params.get('description') || 'A delightful meal prepared to perfection.';
+    const foodPrice = params.get('price') || '0.00';
+    const img = document.body.querySelector("#food-image").src = `${foodName.toLocaleLowerCase()}.jfif`
+    console.log(img)
+
+    // Update page with item details
+    document.getElementById('food-name').textContent = foodName;
+    document.getElementById('food-description').textContent = foodDescription;
+    document.getElementById('food-price').textContent = `Price: ₹${foodPrice}`;
+</script>
+
+</body>
+</html>
