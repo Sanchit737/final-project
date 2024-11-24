@@ -229,13 +229,19 @@ body {
     color: black;
     font-weight: 700;
 }
-
+.item-type{
+    display: flex;
+    justify-content: space-between;
+    
+}
 .food-container {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     justify-content: space-between;
 }
 
-.food-container img {
+/* .food-container img {
     display: block;
     width: 100%;
     margin: auto;
@@ -243,7 +249,7 @@ body {
     object-fit: cover;
     border-radius: 10px;
     object-position: center;
-}
+} */
 
 .img-container {
     margin: 0 1rem;

@@ -64,8 +64,12 @@
     const foodName = params.get('name') || 'Delicious Food';
     const foodDescription = params.get('description') || 'A delightful meal prepared to perfection.';
     const foodPrice = params.get('price') || '0.00';
-    const img = document.body.querySelector("#food-image").src = `${foodName.toLocaleLowerCase()}.jfif`
-    console.log(img)
+    const foodImage = params.get('image') || '';
+
+    const foodImageElement = document.getElementById('food-image');
+    if (foodImage) {
+        foodImageElement.src = foodImage;  // Set the image source
+    }
 
     // Update page with item details
     document.getElementById('food-name').textContent = foodName;

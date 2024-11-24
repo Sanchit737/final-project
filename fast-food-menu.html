@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Food Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <header class="bg-blue-900 text-white py-4">
+    <h1 class="text-center text-5xl font-extrabold">Fast Food Menu</h1>
+  </header>
+
+  <section id="food-menu" class="container mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="food-menu-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform transition-all duration-300">
+      <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2560%2Cc_limit/Smashburger-recipe-120219.jpg" alt="Chicken Curry" class="w-full h-64 object-cover">
+      <div class="p-4">
+        <h2 class="text-2xl font-semibold text-gray-800">BURGER</h2>
+        <p class="text-gray-600 mt-2">A delicious, juicy patty served in a soft bun, topped with fresh veggies, cheese, and your choice of condiments for the perfect bite.</p>
+        <p class="text-xl font-bold text-gray-900 mt-2">Price: ₹39</p>
+        <a href="order.html?name=Burger&price=39&image=https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2560%2Cc_limit/Smashburger-recipe-120219.jpg">
+          <button class="order-btn bg-blue-600 text-white py-2 px-6 rounded-full mt-4 hover:bg-blue-700 transition-all duration-300">Order Now</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="food-menu-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform transition-all duration-300">
+      <img src="https://img.thecdn.in/285347/1685038567422_SKU-0734_0.jpg?format=webp" alt="Pizza" class="w-full h-64 object-cover">
+      <div class="p-4">
+        <h2 class="text-2xl font-semibold text-gray-800">FARM FRESH PIZZA</h2>
+        <p class="text-gray-600 mt-2">A wholesome pizza topped with a medley of fresh vegetables, melted cheese, and a savory tomato sauce, baked to perfection.</p>
+        <p class="text-xl font-bold text-gray-900 mt-2">Price: ₹ 149</p>
+        <a href="order.html?name=Farm Fresh Pizza&price=149&image=https://img.thecdn.in/285347/1685038567422_SKU-0734_0.jpg?format=webp">
+          <button class="order-btn bg-blue-600 text-white py-2 px-6 rounded-full mt-4 hover:bg-blue-700 transition-all duration-300">Order Now</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="food-menu-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform transition-all duration-300">
+      <img src="https://sausagemaker.com/wp-content/uploads/Homemade-French-Fries_8.jpg" alt="Chicken Curry" class="w-full h-64 object-cover">
+      <div class="p-4">
+        <h2 class="text-2xl font-semibold text-gray-800">FRENCH FRIES</h2>
+        <p class="text-gray-600 mt-2">Crispy, golden fries seasoned to perfection, offering a satisfying crunch with every bite.</p>
+        <p class="text-xl font-bold text-gray-900 mt-2">Price: ₹49</p>
+        <a href="order.html?name=French Fries&price=49&image=https://sausagemaker.com/wp-content/uploads/Homemade-French-Fries_8.jpg">
+          <button class="order-btn bg-blue-600 text-white py-2 px-6 rounded-full mt-4 hover:bg-blue-700 transition-all duration-300">Order Now</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="food-menu-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform transition-all duration-300">
+      <img src="https://i.ndtvimg.com/i/2017-07/grilled-sandwich_620x330_51501068389.jpg" alt="Chicken Curry" class="w-full h-64 object-cover">
+      <div class="p-4">
+        <h2 class="text-2xl font-semibold text-gray-800">GRILLED SANDWICH</h2>
+        <p class="text-gray-600 mt-2">A warm, toasty sandwich filled with melted cheese, fresh veggies, and your choice of fillings, grilled to golden perfection.</p>
+        <p class="text-xl font-bold text-gray-900 mt-2">Price: ₹79</p>
+        <a href="order.html?name=Grilled Sandwich&price=79&image=https://i.ndtvimg.com/i/2017-07/grilled-sandwich_620x330_51501068389.jpg">
+          <button class="order-btn bg-blue-600 text-white py-2 px-6 rounded-full mt-4 hover:bg-blue-700 transition-all duration-300">Order Now</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="food-menu-item bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform transition-all duration-300">
+      <img src="https://skinnyspatula.com/wp-content/uploads/2022/10/Creamy_Garlic_Chicken_Pasta_0-735x735.jpg" alt="Chicken Curry" class="w-full h-64 object-cover">
+      <div class="p-4">
+        <h2 class="text-2xl font-semibold text-gray-800">ITALIAN PASTA</h2>
+        <p class="text-gray-600 mt-2">Tender pasta in a rich sauce, topped with fresh herbs and grated cheese.</p>
+        <p class="text-xl font-bold text-gray-900 mt-2">Price: ₹100</p>
+        <a href="order.html?name=Italian Pasta&price=100&image=https://skinnyspatula.com/wp-content/uploads/2022/10/Creamy_Garlic_Chicken_Pasta_0-735x735.jpg">
+          <button class="order-btn bg-blue-600 text-white py-2 px-6 rounded-full mt-4 hover:bg-blue-700 transition-all duration-300">Order Now</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Add more main course items here with the same structure -->
+  </section>
+
+  <footer class="bg-blue-900 text-white py-4 text-center">
+    <p>&copy; One8 Commune all right reserved</p>
+  </footer>
+
+</body>
+</html>
